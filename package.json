@@ -4,7 +4,8 @@
   "description": "\"# clean-node-api\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:staged": "jest"
   },
   "repository": {
     "type": "git",
@@ -13,8 +14,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sulzbachmatheus/clean-node-api/issues"
-  },
-  "homepage": "https://github.com/sulzbachmatheus/clean-node-api#readme"
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.22",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "eslint": "^7.19.0",
+    "eslint-config-standard-with-typescript": "^20.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "husky": "^4.3.8",
+    "jest": "^26.6.3",
+    "lint-staged": "^10.5.3",
+    "ts-jest": "^26.5.0",
+    "typescript": "^4.1.3"
+  }
 }
