@@ -14,7 +14,7 @@ export class DbAddAccount implements AddAccount {
     const hashedPassword = await this.encrypter.encrypt(accountData.password)
     // Object.assign: using the same object that I have as a method parameter but changing the password property to use the hashed variable above
     // using '{}' as first parameter I ensure that I am creating another object based on the previous one received by parameter
-    await this.addAccountRepository.add(Object.assign({}, accountData, { password: hashedPassword }))
-    return await new Promise(resolve => resolve(null))
+    const account = await this.addAccountRepository.add(Object.assign({}, accountData, { password: hashedPassword }))
+    return account
   }
 }
