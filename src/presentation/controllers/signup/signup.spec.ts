@@ -3,8 +3,6 @@ import { InvalidParamError, MissingParamError, ServerError } from '../../errors'
 import { AccountModel } from '../../../domain/models/account'
 import { AddAccount, AddAccountModel } from '../../../domain/usecases/add-account'
 import { EmailValidator } from '../../protocols/email-validator'
-// import { EmailValidator } from '../../protocols'
-// import { AccountModel, EmailValidator, AddAccount, AddAccountModel } from './signup-protocols'
 
 interface SutTypes {
   sut: SignUpController
