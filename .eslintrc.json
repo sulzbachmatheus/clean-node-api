@@ -7,6 +7,7 @@
         "@typescript-eslint/strict-boolean-expressions": 0,
         "@typescript-eslint/indent": "off",
         "@typescript-eslint/quotes": "off",
-        "@typescript-eslint/return-await": "off"
+        "@typescript-eslint/return-await": "off",
+        "@typescript-eslint/no-misused-promises": "off"
     }
 }
